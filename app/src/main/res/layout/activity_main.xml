@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_fuerte"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_person_24" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/nombre"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/apellido"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/edtx_nombre"
+                android:background="@color/gris_bajo"
+                android:hint="Nombre"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/edtx_apellido"
+                android:background="@color/gris_bajo"
+                android:gravity="right"
+                android:hint="Apellido"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dp"
+                android:text="@string/correo"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:background="@color/gris_bajo"
+                android:hint="correo@hotmail.com.mx"
+                android:padding="3dp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:padding="3dp"
+                android:text="@string/contras"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:background="@color/gris_bajo"
+                android:inputType="textPassword"
+                android:padding="3dp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:padding="3dp"
+                android:text="@string/tel"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:background="@color/gris_bajo"
+                android:hint="6441234567"
+                android:padding="3dp" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Registarse"
+        />
+
+</LinearLayout>
